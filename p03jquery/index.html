@@ -45,18 +45,17 @@ td:hover {
                 <th>Nomor</th>
                 <th>Nama</th>
                 <th>Alamat</th>
-                <th colspan="2">Aksi</th>
+                <th>Aksi</th>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Jivi</td>
-                <td>Majalengka</td>
-                <td>Edit</td>
-                <td>Hapus</td>
+                <td class="text">1</td>
+                <td class="text">Jivi</td>
+                <td class="text">Majalengka</td>
+		<td class="text">Edit</td>
             </tr>            
-                <td>2</td>
-                <td>Arya</td>
-                <td>Brebes</td>
+                <td class="text">2</td>
+                <td class="text">Arya</td>
+                <td class="text">Brebes</td>
                 <td>Edit</td>
                 <td>Hapus</td>
             </tr>
@@ -86,13 +85,13 @@ td:hover {
     </div>
 </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script>
  $(document).ready(function(){ $('.text').click(function(){ 
   let text = $(this).text();
-  alert(`Kolom ini berisi "${text}"`);
+  alert(`Anda mengklik text yang berisi text "${text}"`);
    if(text!='Delete'){ 
-    let text2 = prompt('Diubah?:', text);
+    let text2 = prompt('Mau diubah?:', text);
     if(!text2) return; $(this).text(text2); }
-    else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) })
+    else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) }) 
 </script>
